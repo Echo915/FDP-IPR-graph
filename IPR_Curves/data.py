@@ -1,17 +1,15 @@
 # Sort data here
 
 PI = 11.5767 # stb/day-spi
-Pavg = 3973.25 # psia
+Pavg = 4473 # psia
 Pb = 1610.0 # psia
-Qv = 10354.715 # stb/d
-Qb = 27358.6363 # stb/d
+Qv = (PI * Pb) / 1.8 # stb/d
+Qb = PI * (Pavg - Pb) # stb/d
 
 margin = 7
 
 # Bottomhole pressure
-Pwf = [3973.25, 1610, 1600, 1550, 1500, 1450, 1400, 1350, 1300, 1250, 1200, 1150, 1100, 
-       1050, 1000, 950, 900, 850, 800, 750, 700, 650, 600, 550, 500, 450, 400, 350, 300, 
-       250, 200, 150, 100, 50, 0]
+Pwf = [4473, 1610] + [a for a in range(1600, -1, -50)]
 
 # Flowrate
 Qo = []

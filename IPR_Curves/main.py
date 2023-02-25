@@ -27,11 +27,11 @@ plt.plot(Qo, Pwf, label = "Productivity Index")
 plt.margins(x=0, y=0)
 
 # Sets range of x-axis
-plt.xlim(0, 40000)
+plt.xlim(0, 45000)
 
 # Creates annotation for a particular point xy (AOF in this case)
-plt.annotate(text="AOF (Qo = 37660 stb/day)", 
-             xy=(37660, 0), xytext=(15000, 750),
+plt.annotate(text=f"AOF (Qo = {round(Qo[-1], 4)} stb/day)", 
+             xy=(Qo[-1], 0), xytext=(15000, 750),
              arrowprops=dict(facecolor="black", shrink=0.03))
 
 plt.xlabel("Flowrate (qo)")

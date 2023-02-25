@@ -21,3 +21,6 @@ def test_maximum_of_Pwf():
 
      print(max(Pwf))
 
+x = [1] + [a for a in range(0, 10, 2)]
+#x = [1, 2] + [3, 4]
+print(x)
