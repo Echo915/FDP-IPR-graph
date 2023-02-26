@@ -9,7 +9,7 @@ Qb = PI * (Pavg - Pb) # stb/d
 margin = 7
 
 # Bottomhole pressure
-Pwf = [4473, 1610] + [a for a in range(1600, -1, -50)]
+Pwf = [4473, 1610] + [a for a in range(1600, 0, -50)] + [14.7, 0]
 
 # Flowrate
 Qo = []
