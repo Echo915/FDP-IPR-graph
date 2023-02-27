@@ -30,7 +30,7 @@ plt.margins(x=0, y=0)
 plt.xlim(0, 45000)
 
 # Creates annotation for a particular point xy (AOF in this case)
-plt.annotate(text=f"AOF = {round(Qo[-2], 4)} stb/day)", 
+plt.annotate(text=f"AOF = {round(Qo[-2], 4)} stb/day", 
              xy=(Qo[-2], Pwf[-2]), xytext=(15000, 750),
              arrowprops=dict(facecolor="black", shrink=0.03))
 
